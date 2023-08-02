@@ -35,5 +35,5 @@ pipeline:
                     image: gradle:7.3
                     shell: Sh
                     command: |-
-                      gradlew clean
-                      gradlew build
+                      gradle clean
+                      gradle build
