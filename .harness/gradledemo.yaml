@@ -34,6 +34,6 @@ pipeline:
                     connectorRef: account.harnessImage
                     image: gradle:7.4
                     shell: Sh
-                    command: |-
+                    command: |
                       gradle clean
-                      gradle build
+                      gradle -q Hello
