@@ -37,3 +37,23 @@ pipeline:
                     command: |
                       gradle clean
                       gradle -q Hello
+  notificationRules:
+    - name: build completed
+      identifier: build_completed
+      pipelineEvents:
+        - type: AllEvents
+        - type: PipelineStart
+        - type: PipelineEnd
+        - type: PipelineSuccess
+        - type: PipelineFailed
+        - type: StageFailed
+        - type: StageSuccess
+        - type: StageStart
+        - type: StepFailed
+      notificationMethod:
+        type: Email
+        spec:
+          userGroups: []
+          recipients:
+            - veera.nadakuduru@gmail.com
+      enabled: true
