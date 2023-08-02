@@ -32,7 +32,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: account.harnessImage
-                    image: gradle:7.3
+                    image: gradle:7.4
                     shell: Sh
                     command: |-
                       gradle clean
