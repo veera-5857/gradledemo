@@ -35,8 +35,8 @@ pipeline:
                     image: gradle:7.4
                     shell: Sh
                     command: |
-                      gradlew clean
-                      gradlew build
+                      gradle clean
+                      gradle build
   notificationRules:
     - name: build completed
       identifier: build_completed
