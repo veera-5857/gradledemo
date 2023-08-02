@@ -33,5 +33,5 @@ pipeline:
                   spec:
                     shell: Sh
                     command: |-
-                      ./gradlew clean
-                      ./gradlew build
+                      gradle clean
+                      gradle build
