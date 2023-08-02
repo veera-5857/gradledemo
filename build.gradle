@@ -24,3 +24,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+task 'Hello' {
+	println 'Test task Hello'
+
+}
